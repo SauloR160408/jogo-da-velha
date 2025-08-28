@@ -7,6 +7,8 @@ var m3 = document.getElementById("3m")
 var b1 = document.getElementById("1b")
 var b2 = document.getElementById("2b")
 var b3 = document.getElementById("3b")
+
+//var vitoria = document.querySelectorAll("#vit")
 var td = document.querySelectorAll(".tds")
 
 var c = 0
@@ -18,9 +20,18 @@ var j2 = prompt("qual seu nome player2?")
 td.forEach(function(td) {
     td.addEventListener("click", () => {
         
+        if (vit()){
+            return ;
+        }
+        if (c===9) {
+            alert("Deu véa!")
+            clear()
+        }
+        
         if (td.innerHTML === "X" || td.innerHTML === "O") {
             return ;
         }
+        
         c++;
         
         if (c % 2 === 0) {
@@ -33,13 +44,6 @@ td.forEach(function(td) {
         td.style.fontSize = "100px";
         td.style.fontFamily = "Arial";
 
-        if (vit()){
-            return ;
-        }
-        if (c===9) {
-            alert("Deu véa!")
-            clear()
-        }
         
     });
     

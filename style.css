@@ -1,7 +1,15 @@
+body {
+  background-color: rgb(60, 212, 174);
+}
 table{
     border-collapse: collapse;
     width: 500px;
     height: 500px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
 }
 #tab{
     /*
@@ -43,4 +51,13 @@ tr :hover{
     background-color: #91909067;
 }
 
+#pontos{
+  top: 90%;
+  gap: 200px;
 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
